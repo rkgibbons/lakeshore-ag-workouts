@@ -24,6 +24,21 @@
 % Custom column types
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 
+% Set the practice date once here; used in the date box on every page
+\newcommand{\practiceday}{Day}
+\newcommand{\practicedate}{Month DD, YYYY}
+
+\newcommand{\datebox}{%
+\fbox{\begin{minipage}[t]{0.12\textwidth}
+\vspace{0pt}
+\raggedleft
+\textbf{\practiceday}\\
+\practicedate\\
+LSSF Lincoln Park\\
+Chicago, IL
+\end{minipage}}%
+}
+
 \begin{document}
 
 \pagestyle{empty}
@@ -33,7 +48,7 @@
 \begin{minipage}[t]{0.75\textwidth}
 \vspace{0pt}
 % Main Practice Table
-\begin{tabular}{|L{2.3cm}|L{2.5cm}L{1.8cm}|L{2.5cm}L{1.8cm}|}
+\begin{tabular}{|L{2.3cm}|L{4cm}L{1.8cm}|L{4cm}L{1.8cm}|}
 \hline
 \cellcolor{sectiongray} &
 \multicolumn{2}{l|}{\cellcolor{silvergray}\textcolor{white}{\textbf{Minis}}} &
@@ -102,22 +117,11 @@
 \end{tabular}
 \end{minipage}%
 \hfill
-\fbox{\begin{minipage}[t]{0.12\textwidth}
-\vspace{0pt}
-\raggedleft
-\textbf{Day}\\
-Month DD, YYYY\\
-LSSF Lincoln Park\\
-Chicago, IL
-\end{minipage}}
+\datebox
 
 \vfill
 
 \noindent
-\begin{minipage}[b]{0.75\textwidth}
-\centering
-\textit{``Your daily quote or thought goes here.''}
-\end{minipage}%
 \hfill
 \begin{minipage}[b]{0.2\textwidth}
 \raggedleft
@@ -131,7 +135,7 @@ Chicago, IL
 \begin{minipage}[t]{0.75\textwidth}
 \vspace{0pt}
 % Main Practice Table
-\begin{tabular}{|L{2.3cm}|L{2.5cm}L{1.8cm}|L{2.5cm}L{1.8cm}|}
+\begin{tabular}{|L{2.3cm}|L{4cm}L{1.8cm}|L{4cm}L{1.8cm}|}
 \hline
 \cellcolor{sectiongray} &
 \multicolumn{2}{l|}{\cellcolor{silvergray}\textcolor{white}{\textbf{Silver}}} &
@@ -200,14 +204,7 @@ Chicago, IL
 \end{tabular}
 \end{minipage}%
 \hfill
-\fbox{\begin{minipage}[t]{0.12\textwidth}
-\vspace{0pt}
-\raggedleft
-\textbf{Day}\\
-Month DD, YYYY\\
-LSSF Lincoln Park\\
-Chicago, IL
-\end{minipage}}
+\datebox
 
 \vfill
 
