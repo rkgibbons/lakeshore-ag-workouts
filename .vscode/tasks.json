@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Open Practice Template",
+      "type": "shell",
+      "command": "code Templates/swim_practice_template.tex",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Push Practice Template",
+      "type": "shell",
+      "command": "git add Templates/swim_practice_template.tex Templates/swim_practice_template.pdf && git commit -m \"Update practice template ($(date +%Y-%m-%d))\" && git push",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
